@@ -1,27 +1,9 @@
 # pip install uszipcode
 import pandas as pd
+import re
 from uszipcode import SearchEngine
 
-# Specify the file name
-file_path = 'Lauren_ReverseGeocoding/semi_water_stress_dataset.csv'
-
-# Read the CSV file into a pandas DataFrame
-df = pd.read_csv(file_path)
-
-# Remove columns to make it temporarily easier to read
-columns_to_remove = [
-    'dwnBasinID', 'Area_km2', 'Shape_Leng', 'ws2024tl', 'ws3024tl', 'ws4024tl',
-    'ws2028tl', 'ws3028tl', 'ws4028tl', 'ws2038tl', 'ws3038tl', 'ws4038tl',
-    'Shape_Le_1', 'Shape_Area', 'FacilityID', 'Latitude', 'Longitude'
-]
-df = df.drop(columns=columns_to_remove, errors='ignore')
-
-# Filter rows based on the "Formatted Address" column
-df = df[df['Formatted Address'].str.contains("USA", case=False, na=False)]
-
-# Extract the last five digits from the "Formatted Address" column
-df['Zip Code'] = df['Formatted Address'].str.extract(r'(\b\d{5}\b)')
-
+# Functions
 # Function to get state from ZIP code
 def get_state(zip_code):
     try:
@@ -31,9 +13,6 @@ def get_state(zip_code):
     except Exception as e:
         print(f"Error getting state for ZIP code {zip_code}: {str(e)}")
         return None
-
-# Apply the function to create the "State" column
-df['State'] = df['Zip Code'].apply(get_state)
 
 # Function to get county from ZIP code and state
 def get_county(zip_code, state):
@@ -50,13 +29,47 @@ def get_county(zip_code, state):
         print(f"Error getting county for ZIP code {zip_code} and state {state}: {str(e)}")
         return None
 
+# Function to extract ZIP code from the "Formatted Address" column
+def extract_zip_code(address):
+    # Find all matches of five digits in the address
+    matches = re.findall(r'\b\d{5}\b', address)
+    
+    # Return the last match if any
+    if matches:
+        return matches[-1]
+    else:
+        return None
+    
+# Define Variables
+input_file_path = 'Lauren_ReverseGeocoding/WRI_dataset.csv'
+output_file_path = 'Lauren_ReverseGeocoding/WRI_updated_dataset.csv'
+
+# Read the CSV file into a pandas DataFrame
+df = pd.read_csv(input_file_path)
+
+'''
+# Remove columns to make it temporarily easier to read
+columns_to_remove = [
+    'dwnBasinID', 'Area_km2', 'Shape_Leng', 'ws2024tl', 'ws3024tl', 'ws4024tl',
+    'ws2028tl', 'ws3028tl', 'ws4028tl', 'ws2038tl', 'ws3038tl', 'ws4038tl',
+    'Shape_Le_1', 'Shape_Area', 'FacilityID', 'Latitude', 'Longitude'
+]
+df = df.drop(columns=columns_to_remove, errors='ignore')
+'''
+# Filter rows based on the "Formatted Address" column
+df = df[df['Formatted Address'].str.contains(" USA", case=False, na=False)]
+
+# Apply the function to create the "Zip Code" column
+df['Zip Code'] = df['Formatted Address'].apply(extract_zip_code)
+
+# Apply the function to create the "State" column
+df['State'] = df['Zip Code'].apply(get_state)
+
 # Apply the function to create the "County" column
 df['County'] = df.apply(lambda row: get_county(row['Zip Code'], row['State']), axis=1)
 
-# Display the modified DataFrame with the new "County" column
-print(df[['Formatted Address', 'Zip Code', 'State', 'County']])
-
-
+# Write the DataFrame to a CSV file
+df.to_csv(output_file_path, index=False)
 
 
 
