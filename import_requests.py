@@ -1,7 +1,7 @@
 import requests
 import csv
 
-api_key = "AIzaSyDpQFJpnjPy9wl1XtWvAYiijtC0msHTo58"
+api_key = #['Insert API Key']
 input_file = "coordinates.csv"
 output_file = "output_addresses.csv"
 
