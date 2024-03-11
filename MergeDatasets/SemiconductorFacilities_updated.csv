@@ -1,45 +1,45 @@
-Company,City,State,Industry,Activity,Existing_Announced
-JX Nippon Mining & Metal,Mesa,AZ,Materials,Manufacturing,Announced New Project
-Air Liquide,Phoenix,AZ,Materials,Manufacturing,Announced New Project
-ASM,Scottsdale,AZ,Equipment,Research & Development,Announced New Project
-Linde,Phoenix,AZ,Materials,Manufacturing,Announced New Project
-Sunlit Chemical,Phoenix,AZ,Materials,Manufacturing,Announced New Project
-TSMC,Phoenix,AZ,Foundry,Manufacturing,Announced New Project
-Amkor,Peoria,AZ,OSAT,Manufacturing,Announced New Project
-LCY Chemical,Casa Grande,AZ,Materials,Manufacturing,Announced New Project
-Solvay,Casa Grande,AZ,Materials,Manufacturing,Announced New Project
-Intel,Chander,AZ,"Foundry, IDM","Manufacturing, Chip Design, Research & Development","Announced New Project, Existing Facility"
-Edwards Vacuum,Chandler,AZ,Materials,Manufacturing,Announced New Project
-EMD,Chandler,AZ,Materials,Manufacturing,Announced New Project
-Yield Engineering Systems,Chandler,AZ,Equipment,Manufacturing,Announced New Project
-Chang Chun Group,Casa Grande,AZ,Materials,Manufacturing,Announced New Project
-Kanto/Chemtrade JV,Casa Grande,AZ,Materials,Manufacturing,Announced New Project
-Akash Systems,Oakland,CA,IDM,Manufacturing,Announced New Project
-Applied Materials,Sunnyvale,CA,Equipment,"Manufacturing, Research & Development","Announced New Project, Existing Facility"
-Entegris,Colorado Springs,CO,Materials,Manufacturing,Announced New Project
-DuPont Semiconductor Technologies,Glasgow,DE,Materials,Manufacturing,Announced New Project
-Rogue Valley Microdevices,Palm Bay,FL,Foundry,Manufacturing,Announced New Project
-Absolics,Covington,GA,Materials,Manufacturing,Announced New Project
-Micron,Boise,ID,IDM,"Manufacturing, Chip Design, Research & Development","Announced New Project, Existing Facility"
-Trusted Semiconductor Solutions,Odon,IN,IDM,Manufacturing,Announced New Project
-Everspin Technologies,Odon,IN,IDM,Manufacturing,Announced New Project
-NHanced Semiconductors,Odon,IN,IDM,Manufacturing,Announced New Project
-NHanced Semiconductors,Bloomington,IN,IDM,Manufacturing,Announced New Project
-Reliable Microsystems,Odon,IN,Fabless,Chip Design,Announced New Project
-SkyWater Technology,West Lafayette,IN,Foundry,Manufacturing,Announced New Project
-MediaTek,West Lafayette,IN,Fabless,"Chip Design, Research & Development",Announced New Project
-EMP Shield,Burlington,KS,IDM,Manufacturing,Announced New Project
-Integra Technologies,Wichita,KS,OSAT,Manufacturing,Announced New Project
-Wolfspeed,Siler City,NC,IDM,Manufacturing,Announced New Project
-Menlo Microsystems,Lansing,NY,IDM,Manufacturing,Announced New Project
-IBM,Poughkeepsie,NY,Fabless,Chip Design,"Announced New Project, Existing Facility"
-Micron,Clay,NY,IDM,Manufacturing,Announced New Project
-Edwards Vacuum,Alabama,NY,Materials,Manufacturing,Announced New Project
-Intel,New Albany,OH,"Foundry, IDM",Manufacturing,Announced New Project
-Rogue Valley Microdevices,Medford,OR,Foundry,Manufacturing,"Announced New Project, Existing Facility"
-Pallidus,Rock Hill,SC,IDM,Manufacturing,Announced New Project
-Schunk Xycarb,Georgetown,TX,Materials,Manufacturing,Announced New Project
-GlobalWafers (GlobiTech),Sherman,TX,Materials,Manufacturing,Announced New Project
-Samsung,Taylor,TX,IDM,Manufacturing,Announced New Project
-Texas Instruments,Sherman,TX,IDM,Manufacturing,"Announced New Project, Existing Facility"
-Texas Instruments,Lehi,UT,IDM,Manufacturing,"Announced New Project, Existing Facility"
+Company,City,State,Industry,Activity,Existing_Announced,,Latitude,Longitude,Formatted Address,Zip Code,State,County
+JX Nippon Mining & Metal,Mesa,AZ,Materials,Manufacturing,Announced New Project,,33.30353,-111.89262,"125 N Price Rd, Chandler, AZ 85224",85224,AZ,Maricopa County
+Air Liquide,Phoenix,AZ,Materials,Manufacturing,Announced New Project,,33.44544,-112.15498,"301 S 45th Ave, Phoenix, AZ 85043",85043,AZ,Maricopa County
+ASM,Scottsdale,AZ,Equipment,Research & Development,Announced New Project,,33.41817,-112.00676,"3440 E University Dr, Phoenix, AZ 85034",85034,AZ,Maricopa County
+Linde,Phoenix,AZ,Materials,Manufacturing,Announced New Project,,33.46072,-111.97341,"1122 N 52nd St, Phoenix, AZ 85008",85008,AZ,Maricopa County
+Sunlit Chemical,Phoenix,AZ,Materials,Manufacturing,Announced New Project,,33.7059,-112.08258,"N 7th Ave & W Alameda Rd, Phoenix, AZ 85085",85085,AZ,Maricopa County
+TSMC,Phoenix,AZ,Foundry,Manufacturing,Announced New Project,,33.77598,-112.160488,"5088 W Innovation Circle, Phoenix, AZ 85085",85085,AZ,Maricopa County
+Amkor,Peoria,AZ,OSAT,Manufacturing,Announced New Project,,33.33546,-111.89903,"2045 E Innovation Cir, Tempe, AZ 85284",85284,AZ,Maricopa County
+LCY Chemical,Casa Grande,AZ,Materials,Manufacturing,Announced New Project,,32.87109,-111.78809," 29 S Commerce Dr Casa Grande, AZ 85193",85193,AZ,Pinal County
+Solvay,Casa Grande,AZ,Materials,Manufacturing,Announced New Project,,32.872111,-111.791538,"W Ash Ave & S Burris Rd, Casa Grande, AZ 85193",85193,AZ,Pinal County
+Intel,Chandler,AZ,"Foundry, IDM","Manufacturing, Chip Design, Research & Development","Announced New Project, Existing Facility",,33.24155,-111.88263,"4500 S Dobson Rd, Chandler, AZ 85248",85248,AZ,Maricopa County
+Edwards Vacuum,Chandler,AZ,Materials,Manufacturing,Announced New Project,,33.280002,-111.801444,"2350 E Germann Rd Ste 30, Chandler, AZ 85286",85286,AZ,Maricopa County
+EMD,Chandler,AZ,Materials,Manufacturing,Announced New Project,,33.27731,-111.81034,"1720 E Germann Rd, Chandler, AZ 85286",85286,AZ,Maricopa County
+Yield Engineering Systems,Chandler,AZ,Equipment,Manufacturing,Announced New Project,,33.2768,-111.89241,"3200 W Germann Rd, Chandler, AZ 85286",85286,AZ,Maricopa County
+Chang Chun Group,Casa Grande,AZ,Materials,Manufacturing,Announced New Project,,32.893941,-111.791605,"W Clayton Rd & N Burris Rd, Casa Grande, AZ 85193",85193,AZ,Pinal County
+Kanto/Chemtrade JV,Casa Grande,AZ,Materials,Manufacturing,Announced New Project,,32.868399,-111.79158,"S Burris Rd & AZ-84, Casa Grande, AZ 85193",85193,AZ,Pinal County
+Akash Systems,Oakland,CA,IDM,Manufacturing,Announced New Project,,37.83485,-122.26771,"4629 Martin Luther King Jr Way, Oakland, CA 94609",94609,CA,Alameda County
+Applied Materials,Sunnyvale,CA,Equipment,"Manufacturing, Research & Development","Announced New Project, Existing Facility",,37.377606,-121.978786,"3050 Bowers Ave, Santa Clara, CA 95054",95054,CA,Santa Clara County
+Entegris,Colorado Springs,CO,Materials,Manufacturing,Announced New Project,,38.89357,-104.8633,"4405 ArrowsWest Dr, Colorado Springs, CO 80907",80907,CO,El Paso County
+DuPont Semiconductor Technologies,Glasgow,DE,Materials,Manufacturing,Announced New Project,,39.64846,-75.73899,"361 Bellevue Rd, Newark, DE 19713",19713,DE,New Castle County
+Rogue Valley Microdevices,Palm Bay,FL,Foundry,Manufacturing,Announced New Project,,28.05196,-80.60428,"2301 Commerce Park Dr NE, Palm Bay, FL 32905",32905,FL,Brevard County
+Absolics,Covington,GA,Materials,Manufacturing,Announced New Project,,33.61801,-83.81109,"1 Skc Dr, Covington, GA 30014",30014,GA,Newton County
+Micron,Boise,ID,IDM,"Manufacturing, Chip Design, Research & Development","Announced New Project, Existing Facility",,43.52911,-116.14889,"8000 S Federal Way, Boise, ID 83716",83716,ID,Ada County
+Trusted Semiconductor Solutions,Odon,IN,IDM,Manufacturing,Announced New Project,,38.90181,-86.91263,"13598 E WestGate Drive, Odon, IN, United States, Indiana",47562,IN,Daviess County
+Everspin Technologies,Odon,IN,IDM,Manufacturing,Announced New Project,,38.89847,-86.91122,"16630 Innovation Drive, Odon, Indiana 47562",47562,IN,Daviess County
+NHanced Semiconductors,Odon,IN,IDM,Manufacturing,Announced New Project,,38.90206,-86.90508,"14590 Schonberger Drive, Odon, IN 47562",47562,IN,Daviess County
+NHanced Semiconductors,Bloomington,IN,IDM,Manufacturing,Announced New Project,,39.20821,-86.5477,"1025 W Acuff Rd, Bloomington, IN 47404",47404,IN,Monroe County
+Reliable Microsystems,Odon,IN,Fabless,Chip Design,Announced New Project,,38.89972,-86.90326,"14051 SGM Gene Shaw Tech Dr, Crane, IN 47522",47522,IN,Martin County
+SkyWater Technology,West Lafayette,IN,Foundry,Manufacturing,Announced New Project,,40.46457,-86.92797,"1281 Win Hentschel Blvd, West Lafayette, IN 47906",47906,IN,Tippecanoe County
+MediaTek,West Lafayette,IN,Fabless,"Chip Design, Research & Development",Announced New Project,,40.42364,-86.92781,"101 FOUNDRY DRIVE, WEST LAFAYETTEIN47906",47906,IN,Tippecanoe County
+EMP Shield,Burlington,KS,IDM,Manufacturing,Announced New Project,,38.17865,-95.74203,"2010 S 6th St, Burlington, KS 66839",66839,KS,Coffey County
+Integra Technologies,Wichita,KS,OSAT,Manufacturing,Announced New Project,,37.74588,-97.243,"3450 N Rock Rd, Wichita, KS 67226",67226,KS,Sedgwick County
+Wolfspeed,Siler City,NC,IDM,Manufacturing,Announced New Project,,35.732861,-79.445641,"US-64 E, Siler City, NC 27344",27344,NC,Chatham County
+Menlo Microsystems,Lansing,NY,IDM,Manufacturing,Announced New Project,,42.4851,-76.46033,"36 Thornwood Dr, Ithaca, NY 14850",14850,NY,Tompkins County
+IBM,Poughkeepsie,NY,Fabless,Chip Design,"Announced New Project, Existing Facility",,41.65933,-73.93136,"2455 South Road, Poughkeepsie, NY 12601",12601,NY,Dutchess County
+Micron,Clay,NY,IDM,Manufacturing,Announced New Project,,43.04937,-76.15643,"333 W Washington St, Syracuse, NY 13202",13202,NY,Onandaga County
+Edwards Vacuum,Alabama,NY,Materials,Manufacturing,Announced New Project,,43.11038,-78.91944,"6416 Inducon Dr W, Sanborn, NY 14132",14132,NY,Niagara County
+Intel,New Albany,OH,"Foundry, IDM",Manufacturing,Announced New Project,,40.09214,-82.80845,"8000 Walton Pkwy Ste 120, New Albany, OH 43054",43054,OH,Licking County
+Rogue Valley Microdevices,Medford,OR,Foundry,Manufacturing,"Announced New Project, Existing Facility",,42.36266,-122.87841,"943 Automation Way, Suite F, Medford, OR 97504",97504,OR,Jackson County
+Pallidus,Rock Hill,SC,IDM,Manufacturing,Announced New Project,,34.9487,-80.94711,"1800 Overview Dr, Rock Hill, SC 29730",29730,SC,York County
+Schunk Xycarb,Georgetown,TX,Materials,Manufacturing,Announced New Project,,30.60903,-97.68321,"101 SE Inner Loop, Georgetown, TX 78626",78626,TX,Williamson County
+GlobalWafers (GlobiTech),Sherman,TX,Materials,Manufacturing,Announced New Project,,33.59289169,-96.60940552,"200 FM-1417, Sherman, TX 75092",75092,TX,Grayson County
+Samsung,Taylor,TX,IDM,Manufacturing,Announced New Project,,30.536521,-97.464943,"2351 Co Rd 404, Taylor, TX",765474,TX,Williamson County
+Texas Instruments,Sherman,TX,IDM,Manufacturing,"Announced New Project, Existing Facility",,33.595397,-96.606303,"6412 S US Highway 75, Sherman, TX 75090",75090,TX,Grayson County
+Texas Instruments,Lehi,UT,IDM,Manufacturing,"Announced New Project, Existing Facility",,40.4383246,-111.8329431,"4000 N Flash Dr, Lehi, UT 84043",84043,UT,Utah County
