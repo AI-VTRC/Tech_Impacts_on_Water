@@ -34,13 +34,13 @@ sns.scatterplot(x='longitude', y='latitude', data=data_for_clustering, hue='clus
 plt.title('K-Means Clustering of Facility Locations')
 plt.xlabel('Longitude')
 plt.ylabel('Latitude')
-plt.show()
+plt.savefig('cluster_plot.png')  # Save the plot as an image file
+plt.close()
 
 # Identify variable importance using cluster centers (centroids)
 cluster_centers = pd.DataFrame(kmeans.cluster_centers_, columns=['latitude', 'longitude'])
 cluster_centers['cluster'] = range(k)
-print("Cluster Centers (Centroids):")
-print(cluster_centers)
+cluster_centers.to_csv('cluster_centers.csv', index=False)  # Save cluster centers to a CSV file
 
 # Visualize variable importance
 plt.figure(figsize=(10, 6))
@@ -50,14 +50,16 @@ plt.title('Variable Importance: Cluster Centers (Centroids)')
 plt.xlabel('Cluster')
 plt.ylabel('Mean Value')
 plt.legend()
-plt.show()
+plt.savefig('variable_importance_plot.png')  # Save the plot as an image file
+plt.close()
 
 # Suggested variables for an AI model based on importance determined by clustering
 suggested_variables = ['major_basin_name', 'minor_basin_name', 'bws_cat1', 'w_awr_tex_tot_cat']
-print("\nSuggested Variables for an AI Model based on Importance Determined by Clustering:")
-print(suggested_variables)
+with open('suggested_variables.txt', 'w') as f:
+    f.write("\nSuggested Variables for an AI Model based on Importance Determined by Clustering:\n")
+    for var in suggested_variables:
+        f.write(var + '\n')
 
 # Count of facilities under each water basin
 facility_counts = data.groupby(['major_basin_name', 'minor_basin_name']).size().reset_index(name='facility_count')
-print("\nFacilities Count under Each Water Basin:")
-print(facility_counts)
+facility_counts.to_csv('facility_counts.csv', index=False)  # Save facility counts to a CSV file

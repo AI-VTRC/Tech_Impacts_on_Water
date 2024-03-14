@@ -1,0 +1,6 @@
+
+Suggested Variables for an AI Model based on Importance Determined by Clustering:
+major_basin_name
+minor_basin_name
+bws_cat1
+w_awr_tex_tot_cat
