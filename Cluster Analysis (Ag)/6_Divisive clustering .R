@@ -35,7 +35,7 @@ summary(distance_matrix)
 diana(distance_matrix, diss = TRUE)
 
 # Divisive coefficient
-# 0.9022689
+# 0.8575064
 
 fviz_nbclust(data, FUN = hcut, method = "silhouette")
 fviz_nbclust(data, FUN = hcut, method = "wss")
@@ -46,8 +46,8 @@ pltree(hc, cex = 0.5, hang = -1, main = "Dendrogram")
 rect.hclust(hc, k = 3, border = 2:5)
 sub_grp <- cutree(hc, k = 3)
 table(sub_grp)
-#  1  2  3 
-# 41  2  7 
+# 1  2  3 
+# 30  2 16 
 
 data_3 = data.frame()
 data_3 = final_data %>%
@@ -59,14 +59,13 @@ data_3$cluster = as.factor(data_3$cluster)
 data_3$Acres = data_3$`AG Land, (Excl Harvested Cropland) - Acres` +
   data_3$`AG Land (Cropland, Harvested) - Acres`
 data_3$`Cloud and Data Centers` = data_3$Semiconductor + data_3$DataCenter
-colnames(data_3)[8] = "Semiconductor Factories"
 
 write.csv(data_3, "cluster_div_3.csv", row.names = FALSE)
 
 p1 <- plot_usmap(data = data_3,
                  values = "cluster",
                  labels = TRUE,
-                 exclude = c("HI", "DC"),
+                 exclude = c("HI", "DC", "AK"),
                  alpha = 0.8) +
   labs(title = "Cluster Analysis: 3 Clusters", fill = "Clusters") + #subtitle = "This is a blank map of the United States.") + 
   theme(legend.position = "right")
@@ -81,20 +80,23 @@ rect.hclust(hc_5, k = 5, border = 2:6)
 sub_grp_5 <- cutree(hc, k = 5)
 table(sub_grp_5)
 # 1  2  3  4  5 
-# 29 12  1  7  1 
+# 9 21  1 16  1 
 
 data_5 = data.frame()
 data_5 = final_data %>%
   mutate(cluster = sub_grp_5)
 
 data_5$cluster = as.factor(data_5$cluster)
+data_5$Acres = data_5$`AG Land, (Excl Harvested Cropland) - Acres` +
+  data_5$`AG Land (Cropland, Harvested) - Acres`
+data_5$`Cloud and Data Centers` = data_5$Semiconductor + data_5$DataCenter
 
 write.csv(data_5, "cluster_div_5.csv", row.names = FALSE)
 
 p6 <- plot_usmap(data = data_5,
                  values = "cluster",
                  labels = TRUE,
-                 exclude = c("HI", "DC"),
+                 exclude = c("HI", "DC", "AK"),
                  alpha = 0.8) +
   labs(title = "Cluster Analysis: 5 Clusters", fill = "Clusters") + #subtitle = "This is a blank map of the United States.") + 
   theme(legend.position = "right")
@@ -109,7 +111,7 @@ citypop <- usmap_transform(citypop)
 p2 <- plot_usmap(data = data_3,
            values = "Drought_Level",
            labels = TRUE,
-           exclude = c("HI", "DC"),
+           exclude = c("HI", "DC", "AK"),
            alpha = 0.8)  +
   labs(title = "Drought Levels Across the US",
        fill = "Drought Levels") + #subtitle = "This is a blank map of the United States.") + 
